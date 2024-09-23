@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import About from './pages/About';
+import SinglePoke from './pages/SinglePoke';
 
 import Nav from './components/Nav';
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/pokemon/:name" element={<SinglePoke />} />
       </Routes>
     </div>
   );
