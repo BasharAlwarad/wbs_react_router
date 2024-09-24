@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import User from '../components/User';
+import UserEl from '../components/UserEl';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -22,7 +22,7 @@ const Users = () => {
       {users?.map((user) => {
         return (
           <ul key={user.id}>
-            <User x={user} />
+            <UserEl user={user} />
           </ul>
         );
       })}
