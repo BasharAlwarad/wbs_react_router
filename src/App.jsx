@@ -1,5 +1,11 @@
+import Users from './pages/Users';
+
 function App() {
-  return <></>;
+  return (
+    <div>
+      <Users />
+    </div>
+  );
 }
 
 export default App;
