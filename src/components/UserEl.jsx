@@ -4,7 +4,7 @@ const UserEl = ({ user }) => {
   console.log(user);
   return (
     <li className="p-2 m-3 border border-2 border-black">
-      <Link to={`/user/${user.id}`}>
+      <Link to={`user/${user.id}`}>
         <h2>{user?.name}</h2>
         <p>{user?.email}</p>
       </Link>

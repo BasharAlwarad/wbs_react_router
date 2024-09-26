@@ -5,7 +5,7 @@ const User = () => {
   const [user, setUser] = useState({});
 
   const { id } = useParams();
-
+  console.log(id);
   const fetchOneUser = () => {
     fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
       .then((response) => response.json())
