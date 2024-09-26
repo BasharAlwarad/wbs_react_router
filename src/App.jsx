@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Users from './pages/Users';
-import About from './pages/About';
-import User from './pages/User';
-import Products from './pages/Products';
-import Product from './pages/Product';
+// import {Ab} from '@/pages'
+// import { About, Users, User, Product, Products } from '@/pages';
+import { About, User, Users, Product, Products } from './pages';
+
+// import Users from './pages/Users';
+// import About from './pages/About';
+// import User from './pages/User';
+// import Products from './pages/Products';
+// import Product from './pages/Product';
 
 import Details from './components/Details';
 import ProductImage from './components/ProductImage';
