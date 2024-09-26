@@ -26,8 +26,6 @@ const Product = ({ product, setProduct }) => {
           </Link>
         </div>
         <Outlet />
-        {/* <Details product={product} /> */}
-        {/* <ProductImage product={product} /> */}
       </div>
     </div>
   );
