@@ -4,15 +4,15 @@ import UserEl from '../components/UserEl';
 const Users = () => {
   const [users, setUsers] = useState([]);
 
-  const fetchUsers = () => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setUsers(data);
-      });
+  const fetchUsers = async () => {
+    try {
+      const res = await fetch('https://jsonplaceholder.typicode.com/users');
+      const data = await res.json();
+      setUsers(data);
+    } catch (error) {
+      console.log(error);
+    }
   };
-
   useEffect(() => {
     fetchUsers();
   }, []);
