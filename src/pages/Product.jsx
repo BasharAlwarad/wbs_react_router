@@ -1,7 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link, useParams, Outlet } from 'react-router-dom';
-import Details from '../components/Details';
-import ProductImage from '../components/ProductImage';
 
 const Product = ({ product, setProduct }) => {
   const { id } = useParams();
