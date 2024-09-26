@@ -1,15 +1,7 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-// import {Ab} from '@/pages'
-// import { About, Users, User, Product, Products } from '@/pages';
 import { About, User, Users, Product, Products } from './pages';
-
-// import Users from './pages/Users';
-// import About from './pages/About';
-// import User from './pages/User';
-// import Products from './pages/Products';
-// import Product from './pages/Product';
 
 import Details from './components/Details';
 import ProductImage from './components/ProductImage';
@@ -24,9 +16,8 @@ function App() {
     <div>
       <Nav />
       <Routes>
-        <Route path="/" element={<Users cart={cart} />}>
-          <Route path="/user/:id" element={<User />} />
-        </Route>
+        <Route path="/users" element={<Users cart={cart} />} />
+        <Route path=":id" element={<User />} />
         <Route path="/about/:x/:y/:z" element={<About />} />
         <Route
           path="/products"

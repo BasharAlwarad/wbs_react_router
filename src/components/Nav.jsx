@@ -5,7 +5,7 @@ const Nav = () => {
     <nav className="min-w-full bg-red-100">
       <ul className="flex justify-between align-middle">
         <li>
-          <Link to={'/'}>Users</Link>
+          <Link to={'/users'}>Users</Link>
         </li>
         <li>
           <Link to={'/products'}>Products</Link>
